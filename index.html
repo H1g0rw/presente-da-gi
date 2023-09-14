@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recado para minha princesa</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: pink;
+        }
+        .container_header{
+            background-color: white;
+            width: 50%;
+            margin: auto;
+            margin-top: 10px;
+            padding: 1%;
+            border-radius: 40px;
+        }
+        .titulo{
+            text-align: center;
+        }
+        p{
+            margin: auto;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        h2{
+            text-align: center;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            margin: auto;
+            margin-top: 30px;
+        }
+        .texto{
+            margin: auto;
+            padding: 1%;
+        }
+
+        @media (max-width:360px) {
+            .container_header{
+                width: 100%;
+            }
+        }
+    </style>        
+</head>
+<body>
+    <header class="container_header">
+        <h1 class="titulo">Motivos de sempre fazer isso para você</h1>
+            <p>1 Eu gosto de você</p>
+            <p>2 Sua companhia faz bem para mim</p>
+            <p>3 Você tem tudo que eu admiro em uma mulher</p>
+            <p>4 E você é a princesa mais linda desse mundo</p>
+    </header>
+    <main>
+        <h2>Vida clica aqui embaixo para receber seu presentinho</h2>
+        <p>Obs: Eu queria poder dar um melhor, mas não posso agora</p>
+        <input type="button" value="Receber presente" onclick="abrir()">
+        <div class="texto">
+
+        </div>
+    </main>
+    <script>
+        function abrir(){
+            let txt = document.querySelector(`.texto`)
+            txt.innerText = `
+            Amor, eu sempre vou fazer isso enquanto estiver comigo
+            E eu quero falar que eu tô sendo a pessoa mais feliz do mundo ultimamente por ter sua companhia 
+            O dia que senti sua presença foi maravilhoso, não vejo a hora de sentir isso novamente
+            Posso dizer que foi o melhor dia do mês e obrigado por isso 
+            `
+
+            txt.innerText += `
+                Obrigado por ser essa menina preocupada comigo 
+                E eu sei que se quisermos ficar junto não vai ser fácil, pois temos rotinas pesadas
+                mas naos ao para sempre um dia isso muda
+                e o dia que isso mudar eu quero estar do seu lado
+
+            `
+
+            txt.innerText += `
+                Se uma notificação sua me tira um sorriso, imagina oque um sorriso seu não me tira
+                Você esta comigo toda hora te carrego no meu relógio e na mente 
+                e o melhor de tudo é que sei que vou falar com você depois de um dia cansativo
+            `
+
+            txt.innerText += `
+                Eu não sei se já te contei, mas meu maior sonho é ter uma família...
+                E se você for a minha mulher maravilha (Zé Neto e Cristiano - MULHER MARAVILHA)
+                eu vou ser o cara mais feliz do mundo
+
+            `
+
+            txt.innerText += `
+                Olha vida, eu não sei porque você confiou em mim para contar algumas coisas, mas uma coisa você pode ter certeza
+                você vai poder confiar sempre para o resto da sua vida
+                obrigado por confiar em mim
+
+            `
+
+            txt.innerText += `
+            E essa música representa parte disso tudo: Luan Santana - Chuva de arroz
+            `
+        }
+    </script>
+</body>
+</html>
